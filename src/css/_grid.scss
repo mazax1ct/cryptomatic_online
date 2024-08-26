@@ -1,0 +1,21 @@
+.grid {
+    @media(min-width: $md) {
+        display: flex;
+        gap: 20px;
+    }
+    @media(min-width: $fhd) {
+        gap: 40px;
+    }
+
+    & > div {
+        &:nth-child(1) {
+            @media(max-width: $md - 0.02px) {
+                margin-bottom: 20px;
+            }
+        }
+
+        &:nth-child(2) {
+            min-width: 40%;
+        }
+    }
+}

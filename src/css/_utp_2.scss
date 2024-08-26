@@ -1,0 +1,33 @@
+.utp_2 {
+    background-color: rgba(#1A1A1A, 0.67);
+    border-radius: 20px;
+    color: #fff;
+    line-height: 1;
+    padding: 20px;
+    @media(min-width: $xlg) {
+        border-radius: 48px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    &__price {
+        font-size: clamp(28px, 3vw, 60px);
+        font-weight: 600;
+        margin-bottom: 10px;
+
+        span {
+            color: var(--secondary);
+        }
+    }
+
+    &__text {
+        font-size: clamp(14px, 1.5vw, 24px);
+        font-weight: 600;
+        letter-spacing: -0.5px;
+
+        span {
+            color: var(--secondary);
+            text-transform: uppercase;
+        }
+    }
+}

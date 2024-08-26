@@ -1,0 +1,39 @@
+.form {
+    background-color: var(--black_2);
+    border-radius: 24px;
+    padding: 40px;
+
+    &__row {
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__label {
+        display: block;
+    }
+
+    &__label-text {
+        display: block;
+        margin-bottom: 2px;
+    }
+
+    &__note {
+        a {
+            align-items: center;
+            display: inline-flex;
+            gap: 8px;
+
+            svg {
+                fill: currentColor;
+                height: 16px;
+                width: 16px;
+            }
+        }
+    }
+
+    &__button-block {
+        margin-top: 50px;
+        text-align: center;
+    }
+}

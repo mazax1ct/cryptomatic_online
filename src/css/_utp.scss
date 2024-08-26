@@ -1,0 +1,25 @@
+.utp {
+    background-color: rgba(#1A1A1A, 0.67);
+    border-radius: 20px;
+    color: #fff;
+    font-size: clamp(16px, 2vw, 32px);
+    font-weight: 700;
+    line-height: 1.375;
+    letter-spacing: -0.5px;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-transform: uppercase;
+    @media(max-width: $md - 0.02px) {
+        text-align: center;
+    }
+    @media(min-width: $xlg) {
+        border-radius: 48px;
+        line-height: 1.5;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    span {
+        color: var(--secondary);
+    }
+}
